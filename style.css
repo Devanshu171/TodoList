@@ -1,0 +1,113 @@
+body {
+  text-align: center;
+  background-color: rgb(240, 240, 240);
+  font-family: sans-serif;
+  box-sizing: border-box;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+#container {
+  width: 736px;
+  margin: 3rem auto;
+  transform: 1s ease;
+}
+h1 {
+  font-size: 3rem;
+  letter-spacing: 3px;
+}
+form {
+  width: 736px;
+  margin: auto;
+}
+input {
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0px 0px 2px 2px rgba(118, 118, 118, 0.5);
+  height: 50px;
+  width: 550px;
+  padding: 3px 15px;
+  font-size: 22px;
+  font-family: inherit;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-right: 1rem;
+}
+input:focus {
+  outline-width: 0;
+}
+button {
+  height: 50px;
+  width: 100px;
+  font-size: 17px;
+  background-color: dodgerblue;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 500px;
+}
+button:hover {
+  box-shadow: 0px 0px 2px 2px rgba(51, 93, 232, 0.5);
+}
+.list {
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 254, 253);
+  box-shadow: 0px 0px 2px 2px rgba(118, 118, 118, 0.5);
+  height: 50px;
+  width: 550px;
+  margin: 1rem;
+  border-radius: 8px;
+  font-size: 26px;
+  padding: 0px 10px;
+  transition: 0.2s ease-out;
+}
+.list:hover {
+  background-color: dodgerblue;
+  transition: 0.2s ease-out;
+}
+.list:hover .moveUp,
+.list:hover .moveDown {
+  color: dodgerblue;
+  background-color: rgb(255, 255, 255);
+  transition: 0.2s ease-out;
+}
+.list:hover .remove {
+  background-color: rgb(253, 47, 47);
+}
+.list :nth-child(1n + 0) {
+  margin-right: 10px;
+}
+
+.remove,
+.moveUp,
+.moveDown {
+  height: 35px;
+  width: 35px;
+  font-size: 16px;
+  font-weight: bolder;
+  background-color: #fff;
+}
+
+.remove {
+  background-color: rgb(255, 80, 80);
+  color: white;
+}
+.moveUp,
+.moveDown {
+  background-color: cornflowerblue;
+  font-size: 20px;
+}
+.remove:hover,
+.moveUp:hover,
+.moveDown:hover {
+  box-shadow: 0px 0px 0px 2px rgba(49, 49, 49, 0.7);
+}
+#total {
+  position: absolute;
+  top: 170px;
+  left: 660px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
